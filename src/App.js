@@ -8,13 +8,16 @@ function App() {
     lastName: "",
     email: "",
     comments: "",
+    checkbox: false,
+    selectBox: "",
   });
 
 
   function handleChange(e) {
+    const {name, value, type, checked} = e.target
     setFormData({
         ...formData,
-        [e.target.name]: e.target.value,
+        [name]: type === "checkbox" ? checked : value,
     })
   }
   return (
