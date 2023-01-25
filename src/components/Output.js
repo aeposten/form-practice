@@ -7,6 +7,7 @@ function Output ({formData}) {
             <div className="info">Comments: {formData.comments}</div>
             <div className="info">Can we check it?!: {formData.checkbox ? "yes" : "no"}</div>
             <div className="info">Which box?: {formData.selectBox}</div>
+            <div className="info">Fav Color: {formData.favColor}</div>
         </section>
     )
 }
