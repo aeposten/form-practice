@@ -1,11 +1,6 @@
-import { useState } from "react";
 
-function Form() {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-  });
+
+function Form({formData, handleChange}) {
   return (
     <form>
       <label htmlFor="first-name">First Name:
@@ -14,6 +9,7 @@ function Form() {
           name="firstName"
           value={formData.firstName}
           id="first-name"
+          onChange={handleChange}
         />
       </label>
       <label htmlFor="last-name">Last Name:
@@ -22,6 +18,7 @@ function Form() {
           name="lastName"
           value={formData.lastName}
           id="last-name"
+          onChange={handleChange}
         />
       </label>
       <label htmlFor="email">Email Address:
@@ -30,6 +27,15 @@ function Form() {
           name="email"
           value={formData.email}
           id="email"
+          onChange={handleChange}
+        />
+      </label>
+      <label htmlFor="comments">Comments
+        <textarea
+          name="comments"
+          value={formData.comments}
+          id="comments"
+          onChange={handleChange}
         />
       </label>
     </form>
