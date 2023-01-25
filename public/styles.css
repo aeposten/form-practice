@@ -1,0 +1,33 @@
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --mainblue: #144493;
+}
+body {
+    background-color: var(--mainblue);
+    font-family: 'Roboto', sans-serif;
+    color: gold; 
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 0.5em;
+    padding: 0.5em 0.75em;
+    border: 0.1em solid gold;
+    border-radius: 1em;
+    background-color: transparent;
+}
